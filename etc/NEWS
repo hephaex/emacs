@@ -46,6 +46,12 @@ option --enable-check-lisp-object-type is therefore no longer as
 useful and so is no longer enabled by default in developer builds,
 to reduce differences between developer and production builds.
 
+---
+** New variable 'xft-ignore-color-fonts'.
+Default t means don't try to load color fonts when using Xft, as they
+often cause crashes.  Set it to nil if you really need those fonts.
+(Bug#30874)
+
 
 * Startup Changes in Emacs 27.1
 
